@@ -3,65 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a short story about Sam the hobbit.">
-    <meta name="author" content="Noah Rairick">
     <title>Sam the Hobbit</title>
 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    
+    <style>
+        
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #b7f0f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2, h4, h5, h6, p, ol, ul {
+            margin: 10px 20px;
+        }
+
+    
+        nav {
+            background-color: #222;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #FF007F;              
+            text-decoration: none;        
+            font-weight: bold;
+            transition: color 0.3s ease;  
+        }
+
+        nav a:hover {
+            color: #FF69B4;              
+        }
+
+        
+        .rubik-bubbles {
+            font-family: 'Rubik Bubbles', cursive;
+            color: #FF007F;              
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .gallery-container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+        }
+
+       
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <h1><em>The short story of Sam the Hobbit</em></h1>
-    <p>Sam Tripp looks like a hobbit that never found a way out of its hole. 
+
+ 
+    <nav>
+        <ul>
+            <li><a href="#story">Home</a></li>
+            <li><a href="#lifestyle">Lifestyle</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    
+    <section id="story">
+        <h1>The short story of Sam the <em>Hobbit</em></h1>
+        <p>Sam Tripp looks like a hobbit that never found a way out of its hole. 
         He is from a big hole. <br>
         The biggest hole out of any other hobbit. During his time in his hole he <br>   
-        enjoys eating goat cheese from his indoor pet goat named jerry, and he also enjoys <br>
+        enjoys eating goat cheese from his indoor pet goat named Jerry, and he also enjoys <br>
         smoking grass in his brass pipe.
-    <h2>Lifestyle of Sam the hobbit</h2>
-    <p>Sam's daily routine consists of physical labor. <br> 
-       He cares for his plants, cleans the pathway that stretches from the front of his <br> 
-       lawn to the front of his doorstep, and he gives his goat a bath.</p>
-    <h3>List of Sam's favorite foods</h3>                       
-    <ol>                                                    
-        <li>Goat Cheese</li>
-        <li>Asparagas</li>
-        <li>Cottage Cheese</li>
-    </ol>
-    <h4>Sams least favorite foods</h4>
-    <ul>
-        <li>Spinich</li>
-        <li>Pecans</li>
-        <li>Blackberries</li>
-    </ul>
-    <h5><mark style="background-color: lightblue; color:blueviolet">Gallary</mark></h5>
-    <ol>
-        <li>
-            <img src="images/Hobbit 1.jpeg">
-        </li>
-        <li>
-            <img src="images/Hobbit 2.jpeg">
-        </li>
-        <li>
-            <img src="images/Hobbit 3.jpeg">
-        </li>
-    </ol>
-    <h6>Find more resources here! <br>
-  <!-- Here’s the Amazon link -->
-    <a href="https://www.amazon.com/Hobbit-J-R-Tolkien/dp/054792822X" target="_blank">Resource 1 - The Hobbit</a> <br>
-    <a href="https://www.amazon.com/Hobbit-Unexpected-Sir-Ian-McKellen/dp/B00BWJ6JO4" target="_blank">Resource 2 - The Hobbit Movie</a>
-    </h6>
-
-    <p>
-        Thank you for visting my page 
-        <sup><a herf="#footnote1">1</a></sup>
-    </p>
-
-    <hr>
-
-    <p> <sup>1</sup> The inspiration for the website came from the <strong><em>"Hobbit."</em></strong></p>
-    
-    
+        </p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
+    <section id="lifestyle">
+        <h2>Lifestyle of Sam the <em>Hobbit</em></h2>
+        <p>Sam's daily routine consists of physical labor. <br> 
+           He cares for his plants, cleans the pathway that stretches from the front of his <br> 
+           lawn to the front of his doorstep, and he gives his goat a bath.
+        </p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
 
+    <section id="favorites">
+        <h3 class="rubik-bubbles">List of Sam's favorite foods</h3>
+        <ol>
+            <li>Goat Cheese</li>
+            <li>Asparagus</li>
+            <li>Cottage Cheese</li>
+        </ol>
+        <h4>Sams least favorite foods</h4>
+        <ul>
+            <li>Spinach</li>
+            <li>Pecans</li>
+            <li>Blackberries</li>
+        </ul>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+   
+    <section id="gallery">
+        <h5>Gallery</h5>
+        <div class="gallery-container">
+            <img src="images/Hobbit 1.jpeg" alt="Hobbit 1">
+            <img src="images/Hobbit 2.jpeg" alt="Hobbit 2">
+            <img src="images/Hobbit 3.jpeg" alt="Hobbit 3">
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <section id="resources">
+        <h6>Find more resources here!</h6>
+        <a href="https://www.amazon.com/Hobbit-J-R-Tolkien/dp/054792822X" target="_blank">Resource 1 - The Hobbit</a> <br>
+        <a href="https://www.amazon.com/Hobbit-Unexpected-Sir-Ian-McKellen/dp/B00BWJ6JO4" target="_blank">Resource 2 - The Hobbit Movie</a>
+    </section>
+
+   
+    <footer>
+        <p>Thank you for visiting my page <sup><a href="#footnote1">1</a></sup></p>
+        <hr>
+        <p><sup>1</sup> The inspiration for the website came from the <strong><em>"Hobbit."</em></strong></p>
+    </footer>
 
 </body>
 </html>
